@@ -1,10 +1,13 @@
+import os
 import datetime as dt 
 import pandas
 import random
 import smtplib
 ##################### Extra Hard Starting Project ######################
-my_mail = "dantheecreator@gmail.com"
-my_password = "eyjhylpwifajfoah"
+# my_mail = "dantheecreator@gmail.com"
+# my_password = "eyjhylpwifajfoah"
+MY_EMAIL = os.environ.get("MY_EMAIL")
+MY_PASSWORD = os.environ.get("MY_PASSWORD")
 # 1. Update the birthdays.csv
 data = pandas.read_csv("birthdays.csv")
 
