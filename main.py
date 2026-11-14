@@ -26,7 +26,7 @@ for birthday,data in birthdays.items():
 
         with smtplib.SMTP("smtp.gmail.com",587) as connection:
             connection.starttls()
-            connection.login(user=my_mail, password=my_password)
+            connection.login(user=MY_EMAIL, password=my_password)
             connection.sendmail(
                 from_addr=my_mail,
                 to_addrs=data["email"],
