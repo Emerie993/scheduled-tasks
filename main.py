@@ -28,9 +28,9 @@ for birthday,data in birthdays.items():
             connection.starttls()
             connection.login(user=MY_EMAIL, password=MY_PASSWORD)
             connection.sendmail(
-                from_addr=my_mail,
+                from_addr=MY_EMAIL,
                 to_addrs=data["email"],
-                msg=f"Subject:Happy birthday pedophile\n\n {formated_letter}"
+                msg=f"Subject:Happy birthday\n\n {formated_letter}"
             )
 
 
